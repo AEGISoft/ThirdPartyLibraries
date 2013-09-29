@@ -1,0 +1,18 @@
+ 1/ Create local workspace
+	a) create a folder 'Projects' (or so)
+	b) in that folder create 2 subfolders 'Solutions' & 'Artefacts'
+ 2/ Config GitHub Client
+	a) make Github Client use the new 'solutions' folder to store local repositories
+ 3/ Make 'ThirdPartyLibraries' ready for use
+	a) get the project from github
+	b) copy the ThirdPartyLibraries to 'Artefacts' 
+	c) don't copy the (hidden) .git folder 
+	d) the readme file also ain't useful here    
+ 4/ Aegis.framework
+	a) get the framework via github
+	b) open de solution 
+	c) build it in release mode 
+	-> all references should be present (via step 3)
+    -> this creates the build-results in the expected Artefacts folder-structure
+ 5/ Aegis.sudoku
+    -> all references should now be available (via step 3/ & 4/)
